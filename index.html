@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="utf-8">
+	<title>Mediagear, Uppsala</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="jquery-1.2.6.min.js"></script>
+	<script>
+		function slideshow() {
+		    var $active = $('#slideshow img.active');
+
+		    if ($active.length == 0) {
+				$active = $('#slideshow img:last');
+			}
+
+		    // use this to pull the images in the order they appear in the markup
+		    var $next = $active.next().length ? $active.next() : $('#slideshow img:first');
+
+		    $active.addClass('last_active');
+
+		    $next.css({ opacity: 0.0 });
+			$next.addClass('active');
+			$next.animate({ opacity: 1.0 }, 1000, function() {
+		    	$active.removeClass('active last_active');
+		    });
+		}
+
+		$(function() {
+		    setInterval("slideshow()", 5000);
+		});
+	</script>
+	<script type="text/javascript" src="http://use.typekit.com/vap7kot.js"></script>
+	<script type="text/javascript">try { Typekit.load(); } catch (e) {}</script>
+</head>
+<body>
+
+<div id="main">
+	<img src="logo.png" alt="Mediagear, Uppsala" id="logo">
+	
+	<div id="slideshow">
+	    <img src="uppsala1.jpg" alt="Foto av Fyrisån, Uppsala" class="active">
+	    <img src="uppsala2.jpg" alt="Foto av Fyrisån, Uppsala">
+		<img src="uppsala3.jpg" alt="Foto av Fyrisån, Uppsala">
+	</div>
+	
+	<h1>Konsulttjänster inom webbutveckling.</h1>
+	
+	<div id="col1" classs="col">
+		<p>Text här.</p>
+	</div>
+	<div id="col2" classs="col">
+		<p class="contact">
+			<strong>Innehar F-skattsedel</strong> -
+			Kontaktperson: Johan Lundström, telefon 0730-469244<br>
+			E-post: <a href="mailto:info@mediagear.se">info@mediagear.se</a> -
+			Adress: Falkvägen 26, 757 56 Uppsala
+		</p>
+	</div>
+	<div class="clear"></div>
+	
+	<p id="footer">
+			Text och design © 2010 Mediagear of Sweden HB. Alla rättigheter förbehålles.<br>
+			Fotografier är tagna ifrån <span xmlns:cc="http://creativecommons.org/ns#" about="http://www.flickr.com/photos/question_everything/2734187371/"><a rel="cc:attributionURL" href="http://www.flickr.com/photos/question_everything/">http://www.flickr.com/photos/question_everything</a> (<a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>)</span>.
+	</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+	background: #fff url('bg/bg3.png');
+	padding: 5em 5em 0;
+	margin: 0;
+	font-size: 14px;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	color: #222;
+}
+
+a {
+	color: #222;
+}
+
+#main {
+	background-color: #fff;
+	width: 800px;
+	margin: 0 auto;
+	padding: 50px 50px 15px;
+	position: relative;
+}
+
+#logo {
+	background: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	margin: 10px;
+	z-index: 100;
+	padding: 8px 5px 1px;
+}
+
+#slideshow {
+    position: relative;
+    height: 335px;
+	margin: 0;
+}
+ 
+#slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0.0;
+	border-radius: 10px;
+}
+ 
+#slideshow img.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+ 
+#slideshow img.last_active {
+    z-index: 9;
+}
+
+#footer {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 10px;
+	color: #444;
+}
+
+h1 {
+	font-family: "calluna-1", "calluna-2", sans-serif;
+	text-shadow: 1px 1px 0 #fff;
+	margin: 10px;
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	z-index: 100;
+}
+
+.col {
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+#col1 {
+}
+
+#col2 {
+	float: right;
+	border-left: 1px solid #444;
+}
+
+.clear {
+	clear: both;
+}
