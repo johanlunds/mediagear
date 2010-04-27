@@ -81,12 +81,12 @@ h2 {
 
 #col1 {
 	float: left;
-	width: 70%;
+	width: 536px; // 70% of 780px
 }
 
 #col2 {
 	float: right;
-	width: 30%;
+	width: 234px; // 30% - 10px of 780px
 }
 
 li {
