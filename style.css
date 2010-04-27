@@ -1,5 +1,5 @@
 body {
-	background: #fff url('bg/bg4.png');
+	background: #fff url('bg/bg3.png');
 	padding: 5em 5em 0;
 	margin: 0;
 	font-size: 14px;
@@ -81,14 +81,20 @@ h2 {
 
 #col1 {
 	float: left;
+	width: 70%;
 }
 
 #col2 {
 	float: right;
+	width: 30%;
+}
+
+li {
+	list-style-type: square;
 }
 
 #contact {
-	background-color: #ccbf82;
+	background-color: #cbe86b;
 	padding: 10px;
 	font-family: "calluna-1", "calluna-2", serif;
 }
